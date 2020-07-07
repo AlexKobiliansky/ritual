@@ -1,0 +1,80 @@
+.main-head
+  margin-bottom: 80px
+
+.head-logo
+  text-align: center
+  margin-bottom: 22px
+
+.main-mnu
+  ul
+    display: flex
+    justify-content: center
+    font-size: 0
+    line-height: 1
+  li
+    display: inline-block
+    font-size: 14px
+    text-transform: uppercase
+    position: relative
+    padding: 0 17px
+    white-space: nowrap
+    &:after
+      content: ''
+      position: absolute
+      height: 1px
+      width: 0
+      left: 50%
+      bottom: -10px
+      background-color: red
+      +mt(.3s)
+    &:hover
+      &:after
+        width: 100%
+        left: 0
+
+.hamburger
+  padding: 0
+  display: none
+
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: #f8f8f8
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+
+.mm-navbar_size-3
+  height: 196px
+  padding: 10px
+  img
+    height: 175px
+
+.mm-menu_navbar_top-3 .mm-panels
+  top: 200px
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#000, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #000
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #000
+//mmenu customization end
