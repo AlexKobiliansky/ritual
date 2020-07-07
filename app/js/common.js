@@ -45,6 +45,24 @@ $(document).ready(function(){
      * end mobile-mnu customization
      */
 
+    $('.intro-slider').owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 30,
+        dots: true,
+        autoHeight: true,
+        navText: ["",""],
+        navSpeed: 800,
+        responsive: {
+            0: {
+                nav: false
+            },
+            480: {
+                nav: true
+            }
+        }
+    });
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
