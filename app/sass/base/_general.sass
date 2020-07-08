@@ -73,6 +73,10 @@ ul
 .s-top
   padding: 22px 0 180px
 
+.top-desc
+  padding: 0 100px
+  text-align: center
+
 .s-horns
   position: relative
   &:before
@@ -84,6 +88,23 @@ ul
     +bg-cover
     left: 0
     top: -101px
+
+.breadcrumbs
+  text-align: center
+  margin-bottom: 70px
+  a
+    display: inline-block
+    position: relative
+    color: rgba(#000, .63)
+    &:hover
+      color: #000
+    &:after
+      content: ' /'
+      color: rgba(#000, .63)
+    &:last-child
+      pointer-events: none
+      &:after
+        display: none
 
 .page-title
   text-align: center
