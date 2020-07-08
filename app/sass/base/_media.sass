@@ -3,8 +3,16 @@
 
 /*==========  Desktop First  ==========*/
 
+@media(max-width: 1400px)
+  .adv-decor
+    top: -250px
+    right: -350px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .advantages-wrap
+    padding: 0
 
   .service-item-link
     font-size: 12px
@@ -22,6 +30,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-advantages
+    padding: 50px 0
+
+  .advantages-wrap
+    flex-wrap: wrap
+    padding: 0 100px
+
+  .adv-item
+    width: 50%
 
   .service-item-link
     font-size: 14px
@@ -71,10 +89,23 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .advantages-wrap
+    padding: 0
 
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-advantages
+    .section-title
+      margin-bottom: 45px
+
+  .adv-item
+    padding: 25px 10px 30px
+    .svg
+      margin-bottom: 15px
+    &:hover
+      background-image: none
 
   .s-top
     padding-bottom: 120px
@@ -109,6 +140,9 @@
       margin-bottom: 40px
 
 @media (max-width: 390px)
+
+  .adv-item
+    width: 100%
 
   .section-title
     font-size: 20px
