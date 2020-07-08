@@ -67,11 +67,23 @@ ul
 // ======= END TEMPLATE STYLES =======
 
 .s-grey-decor
-  background-image: url('../img/bg-grey-decor.jpg')
+  background-image: url('../img/bg-horns-1.png')
   +bg-cover
 
 .s-top
   padding: 22px 0 180px
+
+.s-horns
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 101px
+    background-image: url('../img/bg-horns.png')
+    +bg-cover
+    left: 0
+    top: -101px
 
 .page-title
   text-align: center
@@ -91,6 +103,32 @@ ul
     background-color: #000
     left: calc(50% - 200px)
     bottom: -27px
+
+.section-title
+  text-align: center
+  font-size: 30px
+  position: relative
+  font-family: "playfairDisplay", sans-serif
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 0.12em
+  line-height: 1
+  span
+    position: relative
+    display: inline-block
+    padding: 0 270px
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 225px
+      height: 1px
+      background-color: #7e7e7e
+      top: 50%
+    &:before
+      left: 0
+    &:after
+      right: 0
+
 
 .btn
   display: inline-block

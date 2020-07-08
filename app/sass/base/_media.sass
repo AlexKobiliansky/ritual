@@ -5,6 +5,13 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .section-title
+    span
+      padding: 0 150px
+      &:before, &:after
+        width: 130px
+
   .main-mnu
     li
       padding: 0 12px
@@ -12,6 +19,24 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .about-content
+    padding: 0
+
+  .s-about
+    padding-bottom: 50px
+
+  .section-title
+    font-size: 28px
+    span
+      padding: 0
+      &:before
+        display: none
+      &:after
+        width: 60%
+        left: 20%
+        bottom: -20px
+        top: auto
 
   .s-intro
     .main-head
@@ -41,8 +66,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-top
+    padding-bottom: 120px
+
+  body
+    letter-spacing: 0.06em
+
+  .section-title
+    font-size: 24px
 
   .s-intro
     .main-head
@@ -68,6 +103,10 @@
       margin-bottom: 40px
 
 @media (max-width: 390px)
+
+  .section-title
+    font-size: 20px
+
   .page-title
     font-size: 24px
 
