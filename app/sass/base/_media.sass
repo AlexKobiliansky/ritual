@@ -11,6 +11,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+
+  .morgs-decor
+    display: none
+
   .foot-line
     padding-bottom: 0
     height: 175px
@@ -48,6 +52,15 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .morg-item
+    margin-right: 30px
+    width: calc(33.33333% - 20px)
+    &:nth-child(4n)
+      margin-right: 30px
+    &:nth-child(3n)
+      margin-right: 0
+
 
   .s-nointro
     .main-head
@@ -113,12 +126,13 @@
 
   .section-title
     font-size: 28px
+    line-height: 1.2
     span
-      padding: 0
+      padding: 0!important
       &:before
         display: none
       &:after
-        width: 60%
+        width: 60%!important
         left: 20%
         bottom: -20px
         top: auto
@@ -150,12 +164,31 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .morgs-wrap
+    justify-content: space-between
+
+  .morg-item
+    margin-right: 0!important
+    width: calc(50% - 10px)
+
   .advantages-wrap
     padding: 0
 
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .contacts-decor
+    left: 0
+    width: 100%
+    height: auto
+
+  .s-morgs
+    padding: 50px 0 0
+    margin-bottom: 0
+    .container
+      top: 0
 
   .popup-form
     padding: 50px 30px
@@ -213,6 +246,12 @@
       margin-bottom: 40px
 
 @media (max-width: 390px)
+
+  .morg-item
+    width: 100%
+    padding-top: 20px
+    &-title
+      margin-bottom: 25px
 
   .s-form
     .section-title

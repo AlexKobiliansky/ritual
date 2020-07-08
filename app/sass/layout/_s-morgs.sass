@@ -1,0 +1,49 @@
+.s-morgs
+  position: relative
+  margin-bottom: -50px
+  .section-title
+    margin-bottom: 55px
+  .container
+    position: relative
+    top: -75px
+
+.morgs-wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  margin-bottom: 50px
+
+
+.morg-item
+  display: inline-block
+  width: calc(25% - 22.5px)
+  margin-bottom: 22px
+  border: 1px solid #a6a6a6
+  padding: 15px 19px 20px
+  color: #000
+  margin-right: 30px
+  &:nth-child(4n)
+    margin-right: 0
+  &-title
+    margin-bottom: 15px
+    display: inline-block
+    letter-spacing: 0.04em
+  &-link
+    opacity: 0
+    +mt(.3s)
+    text-decoration: underline
+    color: #fff
+    display: block
+  &:hover
+    border-color: #000
+    background-color: #000
+    color: #fff
+    .morg-item-link
+      opacity: 1
+
+.morgs-decor
+  opacity: .16
+  position: absolute
+  bottom: 66px
+  right: -200px
+
