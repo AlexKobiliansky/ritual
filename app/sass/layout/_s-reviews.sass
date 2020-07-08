@@ -1,0 +1,43 @@
+.s-reviews
+  padding: 95px 0 180px
+  .section-title
+    margin-bottom: 50px
+
+.review-item
+  text-align: center
+  &-img
+    +bg-cover
+    width: 74px
+    height: 74px
+    background-color: #000
+    border: 1px solid #000
+    border-radius: 50%
+    margin: 0 auto 15px
+  &-name
+    font-weight: 700
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    margin-bottom: 15px
+
+.reviews-slider
+  position: relative
+  .owl-dots
+    position: absolute
+    left: 0
+    width: 100%
+    text-align: center
+    bottom: -65px
+  .owl-nav
+    width: 200px
+    position: absolute
+    left: calc(50% - 100px)
+    bottom: -39px
+    z-index: 2
+    button.owl-prev
+      left: 0
+      top: 0
+      position: absolute
+    button.owl-next
+      right: 0
+      top: 0
+      position: absolute

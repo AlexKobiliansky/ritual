@@ -63,6 +63,31 @@ $(document).ready(function(){
         }
     });
 
+    $('.reviews-slider').owlCarousel({
+        loop: true,
+        items: 3,
+        margin: 30,
+        dots: true,
+        autoHeight: true,
+        navText: ["",""],
+        navSpeed: 800,
+        dotsEach: 1,
+        responsive: {
+            0: {
+                nav: false,
+                items: 1
+            },
+            480: {
+                nav: true,
+                items: 2
+            },
+            992: {
+                nav: true,
+                items: 3
+            }
+        }
+    });
+
 
     $('img.svg').each(function(){
         var $img = jQuery(this);
