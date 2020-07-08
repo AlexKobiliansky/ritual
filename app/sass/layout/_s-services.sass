@@ -1,0 +1,65 @@
+.s-services
+  background-image: url('../img/bg-services.jpg')
+  +bg-cover
+  padding: 62px 0 52px
+  .section-title
+    margin-bottom: 58px
+
+.service-item
+  display: block
+  height: 220px
+  padding: 9px
+  position: relative
+  +bg-cover
+  filter: grayscale(1)
+  color: #fff
+  margin-bottom: 30px
+  &-content
+    display: block
+    height: 100%
+    position: relative
+    z-index: 2
+    padding: 18px
+    background-image: url('../img/service-item-border.png')
+    background-size: 100% 100%
+    +mt(.5s)
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    +mt(.5s)
+    background-color: rgba(#000, .6)
+  &-title
+    font-weight: 700
+    font-size: 18px
+    letter-spacing: 0.06em
+    line-height: 1.2
+    color: #fff
+    +mt(.5s)
+  &-link
+    position: absolute
+    color: #000
+    left: 18px
+    bottom: 60px
+    text-transform: uppercase
+    letter-spacing: 0.06em
+    opacity: 0
+    img
+      width: 19px
+      height: auto
+      position: relative
+      top: -1px
+      margin-left: 4px
+  &:hover
+    color: #000
+    &:before
+      background-color: rgba(#fff, .6)
+    .service-item-link
+      opacity: 1
+    .service-item-content
+      background-image: url('../img/service-item-border-hover.png')
+    .service-item-title
+      color: #000
