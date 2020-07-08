@@ -11,6 +11,11 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-form
+    .section-title
+      font-size: 24px
+      padding-top: 0
+
   .advantages-wrap
     padding: 0
 
@@ -30,6 +35,24 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-form
+    text-align: center
+    .section-title
+      text-align: center
+    .right
+      display: none
+    .form-labels-wrap
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 300px
+    .label-checkbox
+      justify-content: center
+      .jq-checkbox
+        margin-right: 10px
+      span
+        width: auto
 
   .s-advantages
     padding: 50px 0
@@ -96,6 +119,11 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-form
+    .section-title
+      line-height: 1.2
+      font-size: 24px
+
   .s-advantages
     .section-title
       margin-bottom: 45px
@@ -140,6 +168,13 @@
       margin-bottom: 40px
 
 @media (max-width: 390px)
+
+  .s-form
+    .section-title
+      font-size: 20px
+  .label-checkbox
+    span
+      font-size: 11px
 
   .adv-item
     width: 100%
