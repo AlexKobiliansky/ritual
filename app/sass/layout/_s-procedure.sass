@@ -1,0 +1,62 @@
+.s-top-procedure
+  padding-bottom: 280px
+
+.s-procedure
+  position: relative
+  padding-bottom: 10px
+  margin-bottom: -140px
+  .container
+    position: relative
+    top: -140px
+  .section-title
+    margin-bottom: 70px
+
+.proc-wrap
+  position: relative
+  width: calc(100% + 30px)
+  left: -15px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.proc-item
+  width: calc(50% - 15px)
+  position: relative
+  padding: 35px 20px 0 30px
+  border: 1px solid #767676
+  margin-bottom: 30px
+  &-title
+    line-height: 1
+    font-size: 24px
+    font-weight: 600
+    font-family: "playfairDisplay", sans-serif
+    text-transform: uppercase
+    margin-bottom: 35px
+  &-content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    +bg-cover
+  &.true
+    &:before
+      width: 230px
+      height: 161px
+      background-image: url('../img/icons/true-icon.png')
+  &.false
+    &:before
+      width: 178px
+      height: 159px
+      background-image: url('../img/icons/false-icon.png')
+
+.proc-subitem
+  width: calc(50% - 7px)
+  margin-bottom: 30px
+  letter-spacing: 0.03em
+  &-title
+    font-weight: 700
+    margin-bottom: 20px

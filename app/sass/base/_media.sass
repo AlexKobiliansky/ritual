@@ -11,6 +11,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .decor
+    display: none
+
   .stage-item
     width: 33.3333%
     padding-right: 30px
@@ -63,6 +66,13 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .proc-wrap
+    width: 100%
+    left: 0
+
+  .proc-item
+    width: 100%
 
   .morg-item
     margin-right: 30px
@@ -195,6 +205,28 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .proc-item
+    &.true
+      &:before
+        width: 184px
+        height: 129px
+    &.false
+      &:before
+        width: 142px
+        height: 127px
+
+  .s-procedure
+    padding-top: 50px
+    padding-bottom: 20px
+    margin-bottom: 0
+    .container
+      top: 0
+    .section-title
+      margin-bottom: 40px
+
+  .proc-subitem
+    width: 100%
 
   .stage-item
     flex-direction: column
