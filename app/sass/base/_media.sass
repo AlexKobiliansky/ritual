@@ -11,6 +11,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .stage-item
+    width: 33.3333%
+    padding-right: 30px
+
+  .orgs-wrap
+    justify-content: space-between
+    margin-bottom: 50px
+
+  .org-item
+    margin-right: 0
+    width: calc(50% - 15px)
 
   .morgs-decor
     display: none
@@ -165,6 +176,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .stage-item
+    width: 50%
+
+  .org-item
+    width: 100%
+
   .morgs-wrap
     justify-content: space-between
 
@@ -178,6 +195,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .stage-item
+    flex-direction: column
+    justify-content: flex-start
+    margin-bottom: 40px
+    padding-right: 5px
+    &-title
+      width: 100%
+      text-align: center
+      font-size: 12px
+    .svg
+      margin-bottom: 15px
+    &:before
+      left: calc(50% - 50px)
 
   .contacts-decor
     left: 0
@@ -246,6 +277,20 @@
       margin-bottom: 40px
 
 @media (max-width: 390px)
+
+  .stage-item
+    width: 100%
+    padding: 0
+    &-title
+      font-size: 14px
+    .svg
+      margin-bottom: 8px
+
+  .org-item
+    &-title
+      font-size: 28px
+    ul
+      font-size: 12px
 
   .morg-item
     width: 100%

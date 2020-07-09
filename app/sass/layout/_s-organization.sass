@@ -1,0 +1,165 @@
+.s-organization
+  position: relative
+  margin-bottom: -60px
+  padding-bottom: 45px
+  .container
+    position: relative
+    top: -60px
+  .section-title
+    margin-bottom: 60px
+
+
+.orgs-wrap
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 85px
+
+
+.org-item
+  position: relative
+  padding: 10px 13px
+  border: 1px solid #4b4b4b
+  background-image: linear-gradient(to top, #0e0e0e 0, #3b3b3b 91%, #3b3b3b 100%)
+  color: #fff
+  width: calc(33.3333% - 20px)
+  margin-right: 30px
+  margin-bottom: 30px
+  &:nth-child(3n)
+    margin-right: 0
+  &-content
+    position: relative
+    padding: 0 15px
+    height: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-image: url('../img/bg-org.png')
+      background-size: 100% 100%
+
+  &-title
+    background-color: #000
+    font-size: 34px
+    color: #fff
+    text-align: center
+    position: relative
+    width: calc(100% + 56px)
+    left: -28px
+    top: -10px
+    text-transform: uppercase
+    font-weight: 900
+    line-height: 1.2
+    letter-spacing: 0.06em
+    padding: 37px 20px 11px
+    margin-bottom: 50px
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 27px
+      background-image: url('../img/bg-org-title.jpg')
+      +bg-cover
+      left: 0
+      bottom: -27px
+    span
+      display: block
+      color: #fff
+      background: url('../img/bg-text.jpg') no-repeat
+      background-size: cover
+      background-position: center center
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      +mt(.5s)
+  li
+    padding-left: 15px
+    position: relative
+    margin-bottom: 5px
+    letter-spacing: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background-color: #fff
+      left: 0
+      top: 10px
+  ul
+    padding-bottom: 90px
+    +mt(.5s)
+  &-price
+    position: absolute
+    bottom: 28px
+    left: 15px
+    font-weight: 700
+    letter-spacing: 0.06em
+    font-size: 12px
+    color: rgba(#fff, .5)
+    +mt(.5s)
+    span
+      color: #fff
+      font-size: 30px
+  &-link
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    color: #fff
+    font-weight: 700
+    z-index: 3
+    opacity: 0
+    +mt(.5s)
+    .svg
+      width: 18px
+      height: auto
+      margin-left: 10px
+  &:hover
+    ul, .org-item-price
+      opacity: 0
+    .org-item-title
+      span
+        background-position: -400px center
+    .org-item-link
+      opacity: 1
+
+
+.stages-wrap
+  display: flex
+  flex-wrap: wrap
+  counter-reset: stage
+
+.stage-item
+  width: 25%
+  margin-bottom: 75px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  padding-right: 15px
+  padding-left: 6px
+  counter-increment: stage
+  .svg
+    height: auto
+    width: 56px
+  &-title
+    width: calc(100% - 75px)
+    line-height: 1.5
+    font-weight: 700
+    letter-spacing: 0.06em
+  &:before
+    content: counter(stage)
+    position: absolute
+    top: 0
+    left: -15px
+    line-height: 1
+    font-size: 51px
+    font-weight: 700
+    color: rgba(#000, .15)
