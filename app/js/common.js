@@ -144,7 +144,7 @@ $(document).ready(function(){
     $('input[type="checkbox"]').styler();
 
     $(function() {
-        $("a[href='#popup-form']").magnificPopup({
+        $("a[href='#popup-form'], a[href='#popup-service']").magnificPopup({
             type: "inline",
             fixedContentPos: !1,
             fixedBgPos: !0,
@@ -156,6 +156,14 @@ $(document).ready(function(){
             mainClass: "my-mfp-zoom-in"
         })
     });
+
+    $("a[href='#popup-service']").on('click', function(){
+        var th = $(this),
+            serviceName = th.data('service');
+
+        $('#popup-service-name').val(serviceName);
+        $('#popup-service-title').text('\"'+serviceName+'\"');
+    })
 
 
     //E-mail Ajax Send
