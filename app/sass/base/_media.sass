@@ -209,6 +209,16 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+
+  .s-top-form
+    padding-bottom: 50px!important
+
+  .top-form
+    .form-labels-wrap
+      width: 100%
+      &>label
+        width: calc(50% - 10px)
+
   .proc-item
     &.true
       &:before
@@ -312,6 +322,19 @@
       margin-bottom: 40px
 
 @media (max-width: 390px)
+
+
+
+  .top-form
+    .form-labels-wrap
+      width: 200px
+      margin-bottom: 20px
+      flex-wrap: wrap
+      &>label
+        width: 100%
+    .label-checkbox
+      span
+        margin-left: 5px
 
   .stage-item
     width: 100%
